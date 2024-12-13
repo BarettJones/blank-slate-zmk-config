@@ -25,6 +25,16 @@
        zmk,physical-layout = &layout_ortho_4x12_1x2u;
     };
 
+    macros {
+      function_macro: function_macro {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LPAR &kp RPAR>;
+      };
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_function {
@@ -34,24 +44,6 @@
         };
     };
 
-    macros {
-      ZMK_MACRO(thumbs_up,
-		wait-ms = <1>;
-		tap-ms = <5>;
-                bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
-		);
-
-      function_macro: function_macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp LPAR &kp RPAR>;
-      };
-
-
-    };
-    
     tap_dances {
     	shifty: shift_caps_word {
 		compatible = "zmk,behavior-tap-dance";
