@@ -30,7 +30,11 @@
         combo_function {
             timeout-ms = <50>;
             key-positions = <0 1>;
-            bindings = <&kp LPAR &kp RPAR>;
+            bindings = ZMK_MACRO(function_macro,
+		wait-ms = <1>;
+		tap-ms = <5>;
+                bindings = <&kp LPAR &kp RPAR>;
+		);
         };
     };
 
