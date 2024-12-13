@@ -55,7 +55,7 @@
  &kp TAB		&kp Q		&kp W		&kp F		&kp P		&kp B	&kp J		&kp L		&kp U		&kp Y		&kp SEMI	&kp QUOT
  &kp ESC		&kp A		&kp R		&kp S		&kp T		&kp G	&kp M		&kp N		&kp E		&kp I		&kp O		&kp RET
  &mt LSHIFT LPAR	&kp Z		&kp X		&kp C		&kp D		&kp V	&kp K		&kp H		&kp COMMA	&kp DOT		&kp SLASH	&kp RPAR
- &kp LCTRL		&mo SYM_L	&kp LGUI	&kp LALT	&mo SYM_L	  &kp SPACE		&mo NUM_L	&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT
+ &kp LCTRL		&mo LCTRL	&kp LGUI	&kp LALT	&mo SYM_L	  &kp SPACE		&mo NUM_L	&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT
 
             >;
         };
@@ -88,7 +88,7 @@
             label = "Sym";
             bindings = <
 
-&kp TILDE     &trans    &trans		&kp MINUS    &kp LEFT_BRACE     &trans     &trans     &kp RIGHT_BRACKET    &kp EQUAL       &trans       &trans     &bootloader
+&kp TILDE     &trans    &trans		&kp MINUS    &kp LEFT_BRACE     &trans     &trans     &kp RIGHT_BRACE    &kp EQUAL       &trans       &trans     &bootloader
 &kp GRAVE        &kp EXCL  &kp AT		&kp HASH   &kp DLLR    &kp PRCNT     &kp CARET     &kp AMPS    &kp STAR       &kp UNDERSCORE       &kp PLUS     &kp BACKSLASH
 &trans        &trans &trans   &trans       &kp LEFT_BRACKET     &kp PIPE     &trans     &kp RIGHT_BRACKET    &trans       &trans       &trans     &trans
 &trans        &trans    &trans     &kp RPAR        &trans                &kp BACKSPACE             &trans      &trans   &trans &trans &trans
