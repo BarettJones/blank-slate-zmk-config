@@ -86,7 +86,7 @@
             label = "Sym";
             bindings = <
 
-&TILDE     &trans   &trans   &trans    &trans     &trans     &trans     &trans    &trans       &trans       &trans     &bootloader
+&kp TILDE     &trans   &trans   &trans    &trans     &trans     &trans     &trans    &trans       &trans       &trans     &bootloader
 &trans     &kp EXCL  &kp AT   &kp HASH   &kp DLLR    &kp PRCNT     &kp CARET     &kp AMPS    &kp STAR       &trans       &trans     &trans
 &trans     &kp TILDE  &kp EXCL   &kp AT      &kp HASH     &kp PIPE     &trans     &trans    &trans       &trans       &trans     &trans
 &trans &trans        &trans     &kp RPAR        &trans                &trans             &trans      &trans   &trans &trans &trans
