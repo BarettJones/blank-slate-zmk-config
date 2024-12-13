@@ -41,11 +41,15 @@
                 bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
 		);
 
-      ZMK_MACRO(function_macro,
-		wait-ms = <1>;
-		tap-ms = <5>;
-                bindings = <&kp LPAR &kp RPAR>;
-		);
+      function_macro: function_macro {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LPAR &kp RPAR>;
+      };
+
+
     };
     
     tap_dances {
