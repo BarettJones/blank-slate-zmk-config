@@ -38,7 +38,7 @@
     combos {
         compatible = "zmk,combos";
         combo_function {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <24 35>;
             bindings = <&function_macro >;
         };
