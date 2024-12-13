@@ -25,6 +25,15 @@
        zmk,physical-layout = &layout_ortho_4x12_1x2u;
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_function {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp LPAR &kp RPAR>;
+        };
+    };
+
     macros {
       ZMK_MACRO(thumbs_up,
 		wait-ms = <1>;
@@ -50,10 +59,10 @@
             label = "Base";
             bindings = <
 
- &kp TAB   	   &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp SEMI      &kp QUOT
- &kp ESC   	   &kp A      &kp R      &kp S       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O         &kp RET
- &mt LSHIFT LPAR   &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp SLASH      &kp RPAR
- &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
+ &kp TAB		&kp Q		&kp W		&kp F		&kp P		&kp B	&kp J		&kp L		&kp U		&kp Y		&kp SEMI	&kp QUOT
+ &kp ESC		&kp A		&kp R		&kp S		&kp T		&kp G	&kp M		&kp N		&kp E		&kp I		&kp O		&kp RET
+ &mt LSHIFT LPAR	&kp Z		&kp X		&kp C		&kp D		&kp V	&kp K		&kp H		&kp COMMA	&kp DOT		&kp SLASH	&kp RPAR
+ &kp LCTRL		&mo SYM_L	&kp LGUI	&kp LALT	&mo NAV_L	  &kp SPACE		&mo NUM_L	&kp LEFT	&kp UP		&kp DOWN	&kp RIGHT
 
             >;
         };
@@ -74,7 +83,7 @@
             label = "Num";
             bindings = <
 
-&kp GRAVE     &trans   &trans &trans &trans    &trans    &trans    &trans     &trans      &trans       &trans     &trans
+&trans     &kp F1   &kp F2 &kp F3 &kp F4    &kp F5    &kp F6    &kp F7     &kp F8      &kp F9       &kp F10     &trans
 &trans     &kp N1     &kp N2    &kp N3    &kp N4       &kp N5      &kp N6        &kp N7     &kp N8      &kp N9       &kp N0        &trans
 &trans     &trans  &trans &trans &trans    &trans    &trans        &trans     &trans      &trans       &trans     &trans
 &trans  &trans       &trans     &kp N0      &trans           &none            &trans        &kp DEL      &trans &trans &trans
@@ -86,10 +95,10 @@
             label = "Sym";
             bindings = <
 
-&kp TILDE     &trans   &trans   &trans    &trans     &trans     &trans     &trans    &trans       &trans       &trans     &bootloader
-&trans     &kp EXCL  &kp AT   &kp HASH   &kp DLLR    &kp PRCNT     &kp CARET     &kp AMPS    &kp STAR       &trans       &trans     &trans
-&trans     &kp TILDE  &kp EXCL   &kp AT      &kp HASH     &kp PIPE     &trans     &trans    &trans       &trans       &trans     &trans
-&trans &trans        &trans     &kp RPAR        &trans                &trans             &trans      &trans   &trans &trans &trans
+&kp TILDE     &trans    &trans		&kp MINUS    &kp LEFT_BRACE     &trans     &trans     &kp RIGHT_BRACKET    &kp EQUAL       &trans       &trans     &bootloader
+&kp GRAVE        &kp EXCL  &kp AT		&kp HASH   &kp DLLR    &kp PRCNT     &kp CARET     &kp AMPS    &kp STAR       &kp UNDERSCORE       &kp PLUS     &kp BACKSLASH
+&trans        &trans &trans   &trans       &kp LEFT_BRACKET     &kp PIPE     &trans     &kp RIGHT_BRACKET    &trans       &trans       &trans     &trans
+&trans        &trans    &trans     &kp RPAR        &trans                &trans             &trans      &trans   &trans &trans &trans
 
             >;
         };
