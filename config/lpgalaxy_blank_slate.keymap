@@ -61,6 +61,18 @@
             >;
         };
 
+        game_layer {
+            label = "Game";
+            bindings = <
+
+ &kp TAB		    &kp Q		&kp W		&kp F		&kp P		&kp B	&kp J		&kp L		&kp U		&kp Y		&kp SEMI	&kp QUOT
+ &kp ESC		    &kp A		&kp R		&kp S		&kp T		&kp G	&kp M		&kp N		&kp E		&kp I		&kp O		&kp RET
+ &kp LSHIFT    &kp Z		&kp X		&kp C		&kp D		&kp V	&kp K		&kp H		&kp COMMA	&kp DOT		&kp SLASH	&kp RPAR
+ &kp LCTRL		    &kp LCTRL	&kp LGUI	&kp LALT	&mo SYM_L	  &kp SPACE		&mo NUM_L	&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT
+
+            >;
+        };
+
         nav_layer {
             label = "Nav";
             bindings = <
@@ -72,6 +84,8 @@
 
             >;
         };
+
+        
 
         num_layer {
             label = "Num";
@@ -97,17 +111,7 @@
             >;
         };
 
-        game_layer {
-            label = "Game";
-            bindings = <
-
- &kp TAB		    &kp Q		&kp W		&kp F		&kp P		&kp B	&kp J		&kp L		&kp U		&kp Y		&kp SEMI	&kp QUOT
- &kp ESC		    &kp A		&kp R		&kp S		&kp T		&kp G	&kp M		&kp N		&kp E		&kp I		&kp O		&kp RET
- &kp LSHIFT    &kp Z		&kp X		&kp C		&kp D		&kp V	&kp K		&kp H		&kp COMMA	&kp DOT		&kp SLASH	&kp RPAR
- &kp LCTRL		    &kp LCTRL	&kp LGUI	&kp LALT	&mo SYM_L	  &kp SPACE		&mo NUM_L	&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT
-
-            >;
-        };
+        
 
 
     };
